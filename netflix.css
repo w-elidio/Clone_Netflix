@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: white;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+.container {
+  max-width: 1130px;
+  margin: 0 auto;
+}
+.header {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1790px;
+  top: 28px;
+  left: 56px;
+}
+
+.header a {
+  display: inline-block;
+  background: #e50914;
+  color: white;
+  align-self: flex-start;
+  font-size: 16px;
+  padding: 8px 18px;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+input {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+.main {
+  padding-top: 4rem;
+
+  height: 785px;
+  background: url("https://assets.nflxext.com/ffe/siteui/vlv3/5ea364b1-8e59-4693-8ad8-f0eaee32d1bf/329c9f21-e3ff-4af2-9012-89e293573d83/BR-pt-20220530-popsignuptwoweeks-perspective_alpha_website_small.jpg")
+    center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.main_child {
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+}
+
+.main span {
+  font-size: 26px;
+  font-family: sans-serif;
+}
+
+.form_cta {
+  display: grid;
+  grid-template-columns: 500px 250px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.form_cta input {
+  padding: 30px 10px;
+}
+
+.form_cta button {
+  background: #e50914;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form_cta button::after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  background: url("/projeto netflix/imagem/seta.svg");
+  margin-left: 20px;
+}
+
+.form_cta button:hover {
+  background: #f40612;
+}
+
+.main p {
+  font: size 19px;
+  margin-top: 25px;
+}
+
+.main h1 {
+  font-size: 55px;
+  max-width: 510px;
+}
+
+.gradient {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section {
+  background: black;
+  padding: 3rem 0;
+  border-top: 8px solid #222;
+}
+
+.section h1 {
+  font-size: 50px;
+  margin-bottom: 16px;
+}
+
+.section p {
+  font-size: 26px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+}
+
+.img_tv {
+  position: relative;
+}
+
+.video_tv {
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  width: 400px;
+}
+
+.img_tv img {
+  position: relative;
+  z-index: 1;
+}
+
+.download .grid > div:first-child {
+  order: 2;
+}
+
+.download .img_tv {
+  order: 1;
+}
+
+.download .section {
+  position: relative;
+  border-bottom: 8px solid #222;
+  padding: 50px 5%;
+  margin-bottom: 0;
+  background: 0 0;
+  color: #fff;
+  display: block;
+  font-family: sans-serif;
+  font-size: 16px;
+  direction: lrt;
+}
+.img_2 {
+  position: relative;
+  left: 50%;
+  bottom: 8%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  width: 70%;
+  min-width: 15em;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  box-shadow: 0 0 2em #000;
+}
+
+.img_stranger {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  height: 5em;
+  max-width: 100%;
+  border: 0;
+}
+
+.texts {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0.3em 0;
+  display: block;
+}
+
+.texto {
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  display: block;
+  font-family: sans-serif;
+  padding-left: 20px;
+}
+
+.texto1 {
+  color: #0071eb;
+  font-size: 15px;
+  font-weight: 400;
+  display: block;
+  font-family: sans-serif;
+  direction: ltr;
+  padding-left: 20px;
+}
+
+.gif {
+  width: 3em;
+  height: 3em;
+  padding-right: 25px;
+  outline: 2px solid #000;
+  outline-offset: -2px;
+  display: block;
+  background-size: 100%;
+  content: "";
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  background: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/download-icon.gif)
+    center center no-repeat;
+}
+
+.img_pc {
+  position: relative;
+  z-index: 1;
+}
+
+.video_pc {
+  position: absolute;
+  top: 60px;
+  left: 100px;
+  width: 300px;
+}
+.img_pc img {
+  position: relative;
+  z-index: 2;
+}
+
+.grid_questions {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ul_questions {
+  justify-content: center;
+  padding-left: 500px;
+}
+
+.title {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 1.625rem;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  margin: 0 0 0.4em;
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.button_questions {
+  padding: 0.9em 2.5em 0.9em 1.5em;
+  margin-bottom: 1px;
+  font-weight: 400;
+  font-size: 16px;
+  position: relative;
+  width: 40%;
+  border: 0;
+  display: block;
+  text-align: left;
+  background: #303030;
+  -webkit-appearance: button;
+  cursor: pointer;
+  text-transform: none;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.svg-icon {
+  transform: translateY(-50%) rotate(-45deg);
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  height: 1em;
+  width: 1em;
+  fill: #fff;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.li_questions {
+  margin: 0 0 8px 0;
+  position: relative;
+}
+
+.footer .form_cta {
+  margin-top: 25px;
+}
+
+.footer {
+  padding: 4rem 0 2rem 0;
+  border-top: 8px solid #222;
+  background: black;
+  text-align: center;
+  display: grid;
+  justify-items: center;
+}
+
+.p1 {
+  font: size 19px;
+}
+
+.p2 {
+  margin-top: 2rem;
+  color: #757575;
+  font-size: 13px;
+}
